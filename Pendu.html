@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Jeu du pendu</title>
+    <link rel="icon" type="image/gif" href="pendu.gif" />
+    <link href="pendu.css" rel="stylesheet" />
+	<link href="policesPendu.css" rel="stylesheet" />
+	<script src="jquery-2.1.4.min.js"></script>
+    <script src="Jcanvas.js"></script>
+    
+</head>
+<body>
+    <div>
+        <div id="jeu">
+            <div>
+                <h1 class="titre"><u>Bienvenue au pendu !</u></h1>
+                <h2 class="titre"><em>(Tapez sur une lettre du clavier)</em></h2>
+                <canvas id="canvas" width="450" height="400"></canvas>
+                
+            </div>
+            <div id="mot"></div>
+        </div>
+
+        <div id="conclusion">
+           <button id="nouveaujeu">Nouveau mot ? </button>
+         </div>
+         <div>
+         <button id="mode">Mode 2 joueurs </button></BR>
+         <div id="divmode">
+         <em id="versus">Entrez un mot (que des lettres) sans que votre adversaire regarde</em></BR>
+         <input id="motDonne" type="texte" required >
+         <button id="envoi"> Envoyer</button>
+         </div>
+         
+         </div>
+         <h1 id='vic' class='fin2'> Victoire</h1>
+         <h1 class='fin'> Perdu</h1>
+    </div>
+    <script src="pendu.js"></script>
+    <script type="text/javascript">
+        $("#nouveaujeu").click(function () { document.location = "Pendu.html";});
+    </script>
+</body>
+</html>
